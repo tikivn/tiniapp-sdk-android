@@ -13,7 +13,9 @@ class MainActivity : Activity() {
         val tiniButton = findViewById<Button>(R.id.open_tini_app)
         initTiniAppSDK()
         tiniButton.setOnClickListener(View.OnClickListener {
-            TiniAppSDK.getInstance().openMiniApp(this, "com.tini.appstore", null, null)
+            // TiniAppSDK.getInstance().openMiniApp(this, "com.tini.appstore", null, null)
+//            TiniAppSDK.getInstance().openMiniApp(this, "vn.tiki.vip",null, null)
+            TiniAppSDK.getInstance().openMiniApp(this, "vn.tiki.vip","pages/home/index", null)
         })
     }
 
